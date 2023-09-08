@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenditure Entry</title>
+</head>
+<body>
+	
+
+    <div class="container-fluid" id="frame">
+        <iframe id="myFrame" src="https://script.google.com/macros/s/AKfycbzVj9IAg0leH7xZdgkwXs8f-r3gCTPF3-5DuipIutuRo4gXt3qtaI4ICWoXcZp4j4j6/exec" frameborder="0" scrolling="no" onload="resizeIframe()" width="100%" >
+        </iframe>
+    </div>
+
+
+    <!--Script-->
+    <script>
+        
+    function resizeIframe() {
+    const element = document.getElementById("frame");
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    var offset = element.offsetTop + 10;
+    
+        
+    document.getElementById("myFrame").height = h - offset;
+    //alert(cw);
+    //alert("Height: "+h +", Offset: " + offset);
+
+    }
+	
+        
+        
+	
+	</script>
+</body>
+</html>
